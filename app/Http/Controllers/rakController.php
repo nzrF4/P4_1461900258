@@ -96,6 +96,6 @@ class rakController extends Controller
     }
 
     public function export(){
-        return Excel::download(new dataExport, 'data_buku.xlsx');
+        return Excel::download(new dataExport, 'data_1461900258.xlsx');
     }
 }
