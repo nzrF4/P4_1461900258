@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\buku;
 use App\Models\rak_buku;
 use App\Models\jenis_buku;
+use App\Exports\dataExport;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\DB;
 
 class rakController extends Controller
@@ -91,5 +93,9 @@ class rakController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function export(){
+        return Excel::download(new dataExport, 'data_buku.xlsx');
     }
 }

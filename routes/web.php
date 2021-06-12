@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('data', 'App\Http\Controllers\rakController@index');
+Route::get('data/export/', 'App\Http\Controllers\rakController@export');

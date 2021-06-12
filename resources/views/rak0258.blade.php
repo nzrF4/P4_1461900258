@@ -28,6 +28,7 @@
     <div class="block overflow-x-auto mx-6">
     <h1> TUGAS EXPORT EXCEL </h1>
     
+    <a href="/data/export" class="btn btn-success my-3" target="_blank">EXPORT EXCEL</a>
       <table>
         <thead>
           <tr>
